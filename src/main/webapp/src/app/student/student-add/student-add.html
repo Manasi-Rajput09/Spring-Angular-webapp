@@ -1,0 +1,8 @@
+<h3>Add Students</h3>
+<div class="submit-form">
+	<div class="form-group">
+		Name: <input class="form-control" id="name" type="text" name="name" [(ngModel)]="student.name"><br>
+		Age: <input class="form-control" id="age" type="number" name="age" [(ngModel)]="student.age"><br>
+		<button class="btn btn-success" (click)="saveStudent()">Submit</button>
+	</div>
+</div>
