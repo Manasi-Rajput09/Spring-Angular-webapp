@@ -1,32 +1,30 @@
-<div class="row">
-  <div class="col-md-2">&nbsp;</div>
-
-  <div class="col-md-8">
-    <div id="studentsPanel" class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Student Component</h3>
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+    <div class="theme-card">
+      <div class="text-center mb-5">
+        <h1 class="display-4 mb-2">Student Management</h1>
+        <p class="text-muted">An elegant system with a human touch</p>
       </div>
 
-      <div class="panel-body">
-        <div class="row">
-          <div class="col-md-12">
-      <!--       <app-student-add></app-student-add>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <app-student-list></app-student-list> --> 
-            <nav>
-            	<a routerLink = "/"> Home</a>||
-            	<a routerLink = "/add"> Add</a>||
-            	<a routerLink = "/view"> View</a>||
-            </nav>
-            <router-outlet></router-outlet>
-          </div>
-        </div>
+      <nav class="d-flex justify-content-center gap-4 mb-5 pb-3 border-bottom">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link-themed">
+          Home
+        </a>
+        <a routerLink="/add" routerLinkActive="active" class="nav-link-themed">
+          Add Student
+        </a>
+        <a routerLink="/view" routerLinkActive="active" class="nav-link-themed">
+          View Records
+        </a>
+      </nav>
+
+      <div class="content-area pt-2">
+        <router-outlet></router-outlet>
+      </div>
+      
+      <div class="mt-5 text-center pt-4 border-top">
+        <small class="text-secondary opacity-50">&copy; 2026 Student Portal. Crafted for elegance.</small>
       </div>
     </div>
   </div>
-
-  <div class="col-md-2">&nbsp;</div>
 </div>

@@ -1,8 +1,26 @@
-<h3>Add Students</h3>
-<div class="submit-form">
-	<div class="form-group">
-		Name: <input class="form-control" id="name" type="text" name="name" [(ngModel)]="student.name"><br>
-		Age: <input class="form-control" id="age" type="number" name="age" [(ngModel)]="student.age"><br>
-		<button class="btn btn-success" (click)="saveStudent()">Submit</button>
+<div class="row justify-content-center">
+	<div class="col-md-8">
+		<div class="text-start mb-4">
+			<h3 class="fw-bold">Add New Student</h3>
+			<p class="text-secondary small">Enter account details below to enroll a new student.</p>
+		</div>
+		
+		<div class="submit-form">
+			<div class="mb-4">
+				<label for="name" class="form-label text-secondary small fw-bold text-uppercase">Student Name</label>
+				<input class="form-control-themed w-100" id="name" type="text" name="name" 
+					   [(ngModel)]="student.name" placeholder="e.g. John Doe">
+			</div>
+			
+			<div class="mb-5">
+				<label for="age" class="form-label text-secondary small fw-bold text-uppercase">Student Age</label>
+				<input class="form-control-themed w-100" id="age" type="number" name="age" 
+					   [(ngModel)]="student.age" placeholder="e.g. 21">
+			</div>
+			
+			<div class="text-center">
+				<button class="btn-themed px-5" (click)="saveStudent()">Enroll Student</button>
+			</div>
+		</div>
 	</div>
 </div>

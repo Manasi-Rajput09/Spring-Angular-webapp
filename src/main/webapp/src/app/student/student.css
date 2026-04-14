@@ -1,6 +1,6 @@
-h3{
-color:blue;
-}
-#studentsPanel{
-margin-top:50px;
+/* Styles moved to global styles.css or handled via Bootstrap classes */
+.active.nav-link-themed {
+  color: var(--maroon-deep);
+  border-bottom-color: var(--maroon-deep);
+  font-weight: 700;
 }
